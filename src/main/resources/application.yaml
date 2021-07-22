@@ -1,0 +1,29 @@
+server:
+  port: 8081
+     
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+
+security.oauth2.resource.filter-order: 3
+
+security.signing-key: MaYzkSjmkzPC57L
+security.encoding-strength: 256
+security.security-realm: Spring Boot JWT Example Realm
+
+security.jwt.client-id: coindispenser
+security.jwt.client-secret: nfpnUoCLNaPZHZMJ
+security.jwt.grant-type: password
+security.jwt.scope-read: read
+security.jwt.scope-write: write
+security.jwt.resource-ids: testjwtresourceid
+   
+
+denomination: 1,2,5,10
+
+message: Minimal number of coins required to make change for
+
+negativeNumberValidation: Please enter positive number starting from 1
+
+denominations: Please ensure coins denominations is setup in property file
